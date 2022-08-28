@@ -1,10 +1,12 @@
 import React from "react";
 import "./Template.css";
 
-const Template = ({ children, todoLength }) => {
+const Template = ({ children, todoLength, completeNumber }) => {
   return (
     <div className="Template">
-      <div className="title">오늘의 할일({todoLength})</div>
+      <div className="title">
+        Tasks {completeNumber}/{todoLength}
+      </div>
       <div>{children}</div>
     </div>
   );
