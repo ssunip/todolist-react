@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+//import "./App.css";
+import "./components/Template.css";
 import Template from "./components/Template";
 import TodoList from "./components/TodoList";
 import { MdAddCircle } from "react-icons/md";

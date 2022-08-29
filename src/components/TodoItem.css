@@ -2,16 +2,21 @@
   margin-left: auto;
   margin-right: auto;
 
-  border-radius: 5px;
-  box-shadow: 1px 2px 5px 1px #f67280;
+  border: 1px solid #d5d6d6;
   padding: 1rem;
   display: flex;
   align-items: center;
 }
 
-.TodoItem + .TodoItem {
-  margin-top: 15px;
+.TodoItem:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 5px 5px -2px #d5d6d6;
 }
+
+/* .TodoItem + .TodoItem { // 리스트 아이템 간 간격 띄울 때 사용하기 좋을 듯
+  margin-top: 15px;
+} */
 
 .content {
   cursor: pointer;
@@ -21,13 +26,14 @@
 }
 
 .content svg {
-  font-size: 1.5rem;
-  color: #f67280;
+  font-size: 1.2rem;
+  color: #b4b7f9;
 }
 
 .content .text {
   margin-left: 0.5rem;
   flex: 1;
+  font-size: 15px;
 }
 
 .content.checked .text {
@@ -36,3 +42,4 @@
   cursor: pointer;
   opacity: 0.6;
 }
+
